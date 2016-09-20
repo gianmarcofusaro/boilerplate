@@ -1,0 +1,218 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  outline: none; }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+html, body {
+  -webkit-text-size-adjust: none; }
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+body {
+  font-family: "Lato", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: white;
+  color: #2c2c2c;
+  font-size: 16px; }
+
+.form {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px 150px; }
+
+.form__step {
+  position: relative;
+  display: block;
+  width: 100%;
+  vertical-align: baseline;
+  background-color: red; }
+
+.fieldset {
+  float: left;
+  width: 45%;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 0;
+  vertical-align: top; }
+
+.fieldset--right {
+  float: right;
+  width: 45%;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 0;
+  vertical-align: top; }
+
+.fieldset--small {
+  width: 23.55%;
+  height: auto;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  vertical-align: top; }
+
+.form__label {
+  text-transform: uppercase;
+  font-size: 13px; }
+
+.field__textinput {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0 5px 0;
+  padding-left: 10px; }
+
+.field__textinput:focus {
+  border: 1px solid black;
+  box-shadow: none;
+  outline-offset: 0;
+  outline-color: transparent;
+  outline-style: auto;
+  outline-width: 0px; }
+
+.field__textinput--small:focus {
+  border: 1px solid black;
+  box-shadow: none;
+  outline-offset: 0;
+  outline-color: transparent;
+  outline-style: auto;
+  outline-width: 0px; }
+
+.form__select:focus {
+  border: 1px solid black;
+  box-shadow: none;
+  outline-offset: 0;
+  outline-color: transparent;
+  outline-style: auto;
+  outline-width: 0px; }
+
+.field__textinput--small {
+  height: 50px;
+  margin: 10px 20% 5px 0;
+  vertical-align: baseline; }
+
+.form__label {
+  height: 50px;
+  padding: 0;
+  line-height: 10px; }
+
+.form__radioLabel {
+  margin-right: 10px; }
+
+.form__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0 5px 0;
+  padding-left: 10px; }
+
+.form__option {
+  height: 50px;
+  padding: 10px 55px 10px 15px;
+  line-height: 50px; }
+
+[placeholder] {
+  padding-left: 10px; }
+
+input[type="radio"] {
+  display: none; }
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid black; }
+
+input[type="radio"]:checked + .form__radioLabel {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid black;
+  vertical-align: middle;
+  z-index: 100; }
+
+input[type="radio"]:checked + label span {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 9px; }
+
+.label__title {
+  position: relative;
+  margin-right: 50px;
+  margin-top: 10px; }
+
+.form__radiolabel {
+  margin-right: 20px; }
+
+.errorMsg--red {
+  display: block;
+  margin: 10px 20px 5px 0;
+  color: red;
+  font-size: 12px; }
